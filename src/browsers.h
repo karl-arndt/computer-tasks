@@ -21,9 +21,10 @@ void openWebsites(std::string browser) {
 std::string getBrowserID(std::string browser) {
   std::string browsers[][2] = {
     {"brave", "Brave.Brave"},
-    {"google", "Google.Chrome.EXE"},
+    {"chrome", "Google.Chrome.EXE"},
     {"firefox", "Mozilla.Firefox"},
-    {"chromium", "Hibbiki.Chromium"}
+    // {"chromium-browser", "Hibbiki.Chromium"} same command as chrome when opening websites
+    {"msedge", "Microsoft.Edge"}
   };
   std::string output = "";
   for(int i = 0; i < size(browsers); i++) {
