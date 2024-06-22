@@ -2,8 +2,6 @@
 #include <cstring>
 #include "browsers.h"
 
-
-
 int main() {
   system("rmdir C:\\test");
   system("mkdir C:\\test");

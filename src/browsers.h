@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <map>
+
 
 void openWebsites(std::string browser) {
   std::string websites[] =  { "google.com", "blogger.com", "youtube.com", "linkedin.com",
@@ -18,9 +18,26 @@ void openWebsites(std::string browser) {
   }
 }
 
+std::string getBrowserID(std::string browser) {
+  std::string browsers[][2] = {
+    {"brave", "Brave.Brave"},
+    {"google", "Google.Chrome.EXE"},
+    {"firefox", "Mozilla.Firefox"},
+    {"chromium", "Hibbiki.Chromium"}
+  };
+  std::string output = "";
+  for(int i = 0; i < size(browsers); i++) {
+    if (browsers[i][0] == browser) {
+      output = browsers[i][1];
+    }
+  }
+  return output;
+}
+
 
 void installBrowser(std::string browser) {
-  system("winget install --id Brave.Brave --silent");
+  std::string command = "winget install --id " + getBrowserID(browser) + " --silent";
+  system(command.c_str());
   openWebsites(browser);
 }
 
