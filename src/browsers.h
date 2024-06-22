@@ -24,7 +24,8 @@ std::string getBrowserID(std::string browser) {
     {"chrome", "Google.Chrome.EXE"},
     {"firefox", "Mozilla.Firefox"},
     // {"chromium-browser", "Hibbiki.Chromium"} same command as chrome when opening websites
-    {"msedge", "Microsoft.Edge"}
+    {"msedge", "Microsoft.Edge"},
+    {"opera", "Opera.Opera"}
   };
   std::string output = "";
   for(int i = 0; i < size(browsers); i++) {

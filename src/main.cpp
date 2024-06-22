@@ -10,5 +10,6 @@ int main() {
   installBrowser("firefox");
   // installBrowser("chromium-browser");
   installBrowser("msedge");
+  installBrowser("opera");
   return 0;
 }
