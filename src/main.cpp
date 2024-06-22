@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstring>
-#include <string>
 
 void openWebsites(std::string browser) {
   std::string websites[] =  { "google.com", "blogger.com", "youtube.com", "linkedin.com",
@@ -16,7 +15,7 @@ void openWebsites(std::string browser) {
 }
 
 void installBrave() {
-  system("winget install --id Brave.Brave --location \"C:\\test\" --silent");
+  system("winget install --id Brave.Brave --silent");
   openWebsites("brave");
 }
 
