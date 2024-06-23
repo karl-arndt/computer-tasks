@@ -13,8 +13,7 @@ void openWebsites(std::string browser) {
   
   for (int i = 0; i < size(websites); i++) {
     std::string command = "start " + browser + " " + websites[i];
-    const char* commandArray = command.c_str();
-    system(commandArray);
+    system(command.c_str());
   }
 }
 
