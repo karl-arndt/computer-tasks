@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "browsers.h"
+#include "images.h"
 
 int main() {
   // system("rmdir C:\\test");
