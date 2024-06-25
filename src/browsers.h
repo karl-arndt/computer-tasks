@@ -17,7 +17,6 @@ std::vector<std::vector<std::string>> getBrowsers() {
   return browsers;
 }
 
-
 void openWebsites(std::string browser) {
   std::string websites[] =  { "google.com", "blogger.com", "youtube.com", "linkedin.com",
   "wordpress.org", "apple.com", "wikipedia.org", "whatsapp.com", "telegram.org", "mozilla.org",
@@ -40,7 +39,6 @@ std::string getBrowserID(std::string browser) {
   }
   return output;
 }
-
 
 void installBrowser(std::string browser) {
   std::string command = "winget install --id " + getBrowserID(browser) + " --silent";
