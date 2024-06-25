@@ -3,6 +3,19 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+std::vector<std::vector<std::string>> getBrowsers() {
+  std::vector<std::vector<std::string>> browsers {
+    {"brave", "Brave.Brave"},
+    {"chrome", "Google.Chrome.EXE"},
+    {"firefox", "Mozilla.Firefox"},
+    // {"chromium-browser", "Hibbiki.Chromium"} same command as chrome when opening websites
+    {"msedge", "Microsoft.Edge"},
+    {"opera", "Opera.Opera"}
+  };
+  return browsers;
+}
 
 
 void openWebsites(std::string browser) {
@@ -18,14 +31,7 @@ void openWebsites(std::string browser) {
 }
 
 std::string getBrowserID(std::string browser) {
-  std::string browsers[][2] = {
-    {"brave", "Brave.Brave"},
-    {"chrome", "Google.Chrome.EXE"},
-    {"firefox", "Mozilla.Firefox"},
-    // {"chromium-browser", "Hibbiki.Chromium"} same command as chrome when opening websites
-    {"msedge", "Microsoft.Edge"},
-    {"opera", "Opera.Opera"}
-  };
+  std::vector<std::vector<std::string>> browsers = getBrowsers();
   std::string output = "";
   for(int i = 0; i < size(browsers); i++) {
     if (browsers[i][0] == browser) {
