@@ -8,5 +8,6 @@ int main() {
   for (int i = 0; i < size(browsers); i++) {
     installBrowser(browsers[i][0]);
   }
+  downloadImages();
   return 0;
 }

@@ -8,4 +8,12 @@ std::vector<std::string> getImages() {
   return images;
 }
 
+void downloadImages() {
+  std::vector<std::string> images = getImages();
+  for (int i = 0; i < images.size(); i++) {
+    std::string command = "curl " + images[i] + " -o salting-image" + std::to_string(i) + ".jpg";
+    system(command.c_str());
+  }
+}
+
 #endif
