@@ -1,10 +1,6 @@
 #ifndef BROWSERS_H
 #define BROWSERS_H 
 
-#include <iostream>
-#include <string>
-#include <vector>
-
 std::vector<std::vector<std::string>> getBrowsers() {
   std::vector<std::vector<std::string>> browsers {
     {"brave", "Brave.Brave"},

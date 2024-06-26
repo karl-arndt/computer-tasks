@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstring>
+#include <vector>
+
 #include "browsers.h"
 #include "images.h"
 
